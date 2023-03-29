@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+::after,
+::before,
+* {
+  font-family: "Lato", sans-serif;
+  padding: 10;
+  margin: 0;
+  box-sizing: border-box;
+  --color-primary: #f6f6f6;
+  --color-buttons: #ffffff;
+  --color-bars: #333;
+  --color-shadows: #33333357;
+  --all-shadows: 0px 2px 20px 1px var(--color-shadows);
+  /* transition: ease; */
+
+  color: var(--color-bars);
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 230, 155, 0.2),
+    rgba(0, 30, 128, 0),
+    rgba(238, 230, 155, 0.2),
+    rgba(0, 30, 128, 0.1),
+    rgba(238, 230, 155, 0.2),
+    rgba(0, 30, 128, 0.1),
+    rgba(238, 230, 155, 0.2),
+    rgba(0, 30, 128, 0.1),
+    rgba(238, 230, 155, 0.2),
+    rgba(0, 30, 128, 0.1),
+    rgba(238, 230, 155, 0.2)
+  );
+  overflow-x: hidden;
+}
+
+footer {
+  background-color: forestgreen;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+button {
+  font-size: 1.2rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  top: 15rem;
+}

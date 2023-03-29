@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Smith</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/logo.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="margin-sides header-holder">
+        <div class="icon-frame">
+          <a href="/">
+            <img class="logo" src="./images/logo.png" alt="logo" width="60px"
+          /></a>
+        </div>
+        <div class="mini-menu">
+          <button class="tab-buttons">LinkedIn</button>
+          <button class="tab-buttons active">Resume</button>
+          <button class="tab-buttons">GitHub</button>
+        </div>
+        <div id="menu-item" class="icon-frame menu-item">
+          <div class="bars bar-tilt"></div>
+          <div class="bars bar-none"></div>
+          <div class="bars bar-tilt"></div>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <span class="material-symbols-outlined"> home </span>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">
+                supervised_user_circle
+              </span>
+              <a href="/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="margin-sides">
+      <div class="hero-section">
+        <div class="my-name">Hi, I'm Manuel.</div>
+        <div class="location">
+          <span class="material-symbols-outlined"> location_on </span>
+          <p>Salt Lake City, UT</p>
+        </div>
+        <div class="brief-me">
+          <p>
+            I am an experimental technical writer who resides in a terminal. I
+            not only write, but also code and hack things. <br />Learn more
+            <a href="./about.html">about me</a>.
+          </p>
+        </div>
+        <div class="resource-tracker"></div>
+        <div class="tab-div">
+          <div>
+            <a href="https://www.linkedin.com/in/manuel-smith" target="_blank"
+              >Let's Connect</a
+            >
+            <img
+              src="./images/linkedin-profile.png"
+              alt="linkedin profile image"
+            />
+          </div>
+          <div class="active">
+            <a href="./resources/Manuels-resume.pdf" download id="resumeBtn"
+              >Collect My Resume</a
+            >
+            <img src="./images/my-resume.png" alt="Manuel's resume" />
+          </div>
+          <div>
+            <a href="https://github.com/Manuel-Smith" target="_blank"
+              >Check My Code</a
+            >
+            <img src="./images/code-spaces.png" alt="github profile" />
+          </div>
+        </div>
+      </div>
+      <div class="resources-links"></div>
+    </main>
+    <footer class="margin-sides"></footer>
+    <script src="tabprofiles.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>

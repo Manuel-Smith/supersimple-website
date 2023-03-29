@@ -1,0 +1,228 @@
+.margin-sides {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.icon-frame {
+  background-color: var(--color-primary);
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-frame .logo {
+  width: 100%;
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+}
+
+.icon-frame span {
+  position: relative;
+  top: 10px;
+  display: flex;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  justify-content: center;
+  align-content: center;
+}
+.header-holder {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+/*Styling the Sections with .header-holder buttons*/
+/* .header-holder .mini-menu {
+  position: relative;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+} */
+.header-holder .mini-menu,
+main .tab-div div a {
+  position: relative;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.header-holder .mini-menu button {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  /* box-shadow: 0px 2px 20px 1px var(--color-shadows); */
+}
+
+.header-holder .mini-menu .active,
+main .tab-div div a {
+  transition: 500ms ease-in-out;
+  box-shadow: 0px 2px 20px 1px var(--color-shadows);
+}
+
+/* All items with color primary and a shadow */
+
+.header-holder .mini-menu,
+.icon-frame,
+.header-holder .menu {
+  box-shadow: var(--all-shadows);
+}
+
+/* Styling the menu Icon and the bars */
+.header-holder #menu-item {
+  display: grid;
+  gap: 0.3rem;
+  align-content: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.header-holder .menu-item .bars {
+  height: 0.15rem;
+  width: 50%;
+  background-color: var(--color-bars);
+  border: none;
+}
+
+/*Styling the menu items*/
+.header-holder .menu {
+  display: none;
+  position: absolute;
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  top: 95%;
+  left: calc(100% - 21.5%);
+  width: 20%;
+  height: 5rem;
+  font-size: 1.2rem;
+}
+
+.header-holder .menu ul {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  /* gap: 0.2rem; */
+}
+
+.header-holder .menu ul li {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.header-holder .menu ul li a:hover {
+  color: rgb(180, 23, 70);
+  border-bottom: 1px rgb(180, 23, 70) dashed;
+  transition: ease-in-out 300ms;
+}
+
+main .hero-section {
+  display: grid;
+  gap: 2.5rem;
+}
+
+main .hero-section .my-name {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+main .hero-section .my-name,
+main .hero-section .location .material-symbols-outlined {
+  background: linear-gradient(
+    90deg,
+    rgb(112, 192, 188),
+    rgba(0, 110, 255, 0.356),
+    rgba(111, 0, 255, 0.815),
+    rgb(255, 0, 119),
+    rgb(238, 162, 225)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .hero-section .location {
+  text-align: center;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+main .hero-section .location p,
+main .hero-section .brief-me p {
+  color: #3333339a;
+}
+
+main .hero-section .brief-me p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 25%;
+  line-height: 1.5;
+}
+
+main .hero-section .brief-me p a {
+  color: rgb(180, 23, 70);
+  border-bottom: 1px rgb(180, 23, 70) dashed;
+}
+
+main .tab-div {
+  position: relative;
+  border: 1px dashed rgba(0, 0, 255, 0.432);
+  height: 70vh;
+}
+
+main .tab-div > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  opacity: 0;
+  z-index: 1;
+}
+main .resource-tracker {
+  position: relative;
+ background: #8687f6;
+ right: 33px;
+ top: 60.5px;
+ left: 33%; 
+ height: 20px;
+ width: 34%;
+ transition: 400ms ease-in-out;
+}
+
+main .tab-div > div.active {
+  z-index: 2;
+  opacity: 1;
+  transition: 700ms ease-in-out;
+}
+
+main .tab-div div a {
+  margin: 5rem 0 0 0;
+  font-size: 1.4rem;
+  color: white;
+  background: rgba(0, 0, 255, 0.432);
+}
+
+main .tab-div div a:hover {
+  transition: 300ms ease-in-out;
+  background-color: transparent;
+  color: var(--color-bars);
+}
+
+main .tab-div div img {
+  width: 85%;
+  border-radius: 20px;
+}
